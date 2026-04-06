@@ -1,0 +1,285 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage[round]{natbib}
+\usepackage{tikz}
+\usetikzlibrary{positioning, arrows.meta, calc}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{tabularx}
+
+\title{The Whetstone Paradox: Why AI Demands More Education Science, Not Less}
+\author{Jiyeon Yoon\\
+Independent Researcher\\
+\texttt{heznpc@gmail.com}}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+The rapid integration of artificial intelligence into every sector of society has generated two dominant responses regarding education: that traditional education is obsolete and should be replaced by AI-mediated learning, or that education must urgently retool itself to serve AI-era workforce needs. This paper argues that both responses misidentify the problem. Drawing on a critical synthesis of institutional reports (OECD, UNESCO, WEF), empirical studies on cognitive offloading and AI-induced deskilling, economic analyses of firm dissolution, and foundational education theory, we advance the \emph{whetstone thesis}: AI transforms \emph{what} and \emph{how} education delivers, but not \emph{why} education is necessary. Education science addresses invariant questions about human learning, cognitive development, and socialization that are orthogonal to the tools employed. The central challenge is not whether to integrate AI, but which forms of educational friction to preserve and which to eliminate---a distinction that requires \emph{more} education science, not less. We propose a taxonomy of educational friction that distinguishes productive friction (cognitive struggle, social negotiation, failure recovery) from unproductive friction (bureaucratic gatekeeping, credentialism, rote memorization), and articulate the design principle of \emph{structured autonomy} as a framework for AI-era education. The whetstone sharpens through friction; remove all friction, and the blade dulls. The discipline of education science is the knowledge of which friction sharpens and which merely damages.
+\end{abstract}
+
+\textbf{Keywords:} artificial intelligence in education, education science, cognitive offloading, productive friction, desirable difficulties, socialization, human capital theory, one-person enterprise, structured autonomy
+
+% ============================================================
+% SECTION 1: INTRODUCTION
+% ============================================================
+\section{Introduction}
+\label{sec:introduction}
+
+The arrival of large-scale artificial intelligence systems---particularly large language models (LLMs) capable of generating text, code, and analysis at human-competitive levels---has precipitated what many observers describe as a disruption to education rivaling or exceeding the Industrial Revolution \citep{Seldon2018fourth, WEF2025jobs}. By late 2023, over half of U.S. college students were using AI for assignments, with 86\% of that use going undetected by instructors \citep{CognitiveParadox2025}. The OECD, UNESCO, and World Economic Forum have each issued major reports concluding that current educational systems are inadequately preparing students for an AI-transformed world \citep{OECD2026digital, UNESCO2025futures, WEF2025jobs}. A speed differential amplifies the urgency: whereas the Industrial Revolution's transformation of education unfolded over decades and centuries, AI is compressing equivalent disruption into years. ChatGPT reached 100 million users within two months of launch; within a year, nearly 90\% of surveyed college students had adopted it for academic work.
+
+Two dominant responses have emerged. The first, which we term the \emph{obsolescence thesis}, holds that AI renders traditional education unnecessary---that students can learn anything on demand through AI tutors, that credentials are meaningless when AI can outperform most graduates, and that the institutional apparatus of schooling is a relic of the industrial age. The second, the \emph{retooling thesis}, accepts education's necessity but reframes its purpose as workforce preparation for the AI economy---teaching coding, AI literacy, data science, and the ``skills of the future'' as defined by employer surveys and consulting firm projections \citep{WEF2025jobs, Microsoft2025education}.
+
+This paper argues that both responses misidentify the problem. The obsolescence thesis ignores invariant human needs---cognitive development, socialization, the formation of judgment under ambiguity---that no technology can substitute. The retooling thesis reproduces a structural deficiency in the educational paradigm it claims to reform: the reduction of education to a corporate talent pipeline whose destination is, as we will demonstrate, itself dissolving under the pressure of AI-driven firm disaggregation. We advance a third position, the \emph{whetstone thesis}:
+
+\begin{quote}
+AI transforms \emph{what} and \emph{how} education delivers, but not \emph{why} education is necessary. The critical task for education science is distinguishing friction that should be eliminated from friction that builds human capability. Education science becomes more necessary, not less, precisely because AI removes friction indiscriminately.
+\end{quote}
+
+The metaphor is deliberate. A whetstone sharpens a blade through controlled friction. Remove all friction and the blade dulls. Apply friction carelessly and the blade chips. The craft lies in knowing which friction, at what angle, with what pressure. AI is an extraordinarily powerful instrument, but it is education science that holds the knowledge of \emph{which friction sharpens and which friction damages}.
+
+We organize the argument as follows. Section~\ref{sec:case-for-change} establishes the case for educational transformation, documenting the institutional consensus on inadequacy and the dissolution of the firm-as-destination model. Section~\ref{sec:assessment} examines the structural failures of current assessment systems. Section~\ref{sec:invariant} identifies the invariant functions of education that AI cannot replace, with particular attention to socialization and the empirical evidence on AI-induced cognitive decline. Section~\ref{sec:whetstone} presents the whetstone thesis proper: a taxonomy of educational friction and the design principle of structured autonomy. Section~\ref{sec:discussion} discusses implications, limitations, and future directions.
+
+% ============================================================
+% SECTION 2: THE CASE FOR CHANGE
+% ============================================================
+\section{The Case for Change: AI's Disruption of the Educational Apparatus}
+\label{sec:case-for-change}
+
+\subsection{Institutional Consensus on Inadequacy}
+\label{sec:consensus}
+
+The consensus that current education systems are inadequately prepared for AI is now institutional, not merely rhetorical. The OECD's \emph{Digital Education Outlook 2026} found that generative AI can support learning when guided by clear teaching principles, but that without pedagogical scaffolding, ``outsourcing tasks to GenAI enhances performance without producing real learning gains'' \citep{OECD2026digital}. The organization separately proposed a conceptual framework for how AI capabilities should reshape school curricula \citep{OECD2025curriculum} and, jointly with the European Commission, developed an AI literacy framework for primary and secondary education \citep{OECD2025ailiteracy}. UNESCO convened 21 global thinkers who affirmed that AI in education must be ``human-centered, equitable, safe, and ethical'' \citep{UNESCO2025futures}. The World Economic Forum's \emph{Future of Jobs Report 2025} projected that 39\% of key job skills will change by 2030, that 170 million jobs will be created and 92 million displaced, and---crucially---that ``labour markets are evolving faster than education, training and talent systems can adapt'' \citep{WEF2025jobs}. Sixty-three percent of employers cited the skills gap as their primary barrier.
+
+The critical observation is not that these institutions agree change is needed---this is now uncontroversial---but that their recommendations diverge sharply on the \emph{direction} of change, a divergence that reflects the deeper tension between the retooling thesis and the educational tradition we will examine.
+
+\subsection{The Dissolution of the Firm and the Collapse of the Pipeline Destination}
+\label{sec:dissolution}
+
+The retooling thesis presupposes that education's primary function is producing workers for firms. This presupposition faces a structural challenge: the firm itself is dissolving.
+
+\citet{Coase1937firm} argued that firms exist because markets have transaction costs---the friction of search, negotiation, contracting, and monitoring. Firms expand when internal coordination is cheaper than market exchange. AI is now collapsing these transaction costs in ways the internet never fully achieved. As \citet{Yu2025coase} observes, ``an AI agent can draft a contract, source a supplier, negotiate terms, and monitor delivery. That persistent friction of the past is finally dissolving.'' A 2026 arXiv paper theorizes this as ``The Headless Firm,'' arguing that as AI reduces external coordination costs, probability mass shifts from large integrated firms to micro-specialized entities \citep{HeadlessFirm2026}.
+
+The empirical evidence is striking. Carta data show that solo-founded startups rose from 23.7\% of all new startups in 2019 to 36.3\% in the first half of 2025---a 53\% increase \citep{Carta2025solo}. The United States alone has 41.8 million solopreneurs contributing over \$1.3 trillion to the economy. China registered 2.86 million new one-person companies in the second half of 2025, with 47\% year-over-year growth. The cost differential is dramatic: a traditional 10-person team costs \$80,000--\$120,000 per month; an AI-powered solo operator achieves comparable output at \$300--\$500 per month---a 95--98\% reduction.
+
+If the firm is disaggregating, then the educational model premised on ``producing employees for firms'' loses not merely its curriculum but its \emph{destination}. The pipeline's endpoint is disappearing.
+
+\subsection{The Self-Defeating Workforce Preparation Model}
+\label{sec:self-defeating}
+
+The retooling thesis faces a second, more fundamental problem: it is structurally self-defeating. The workforce preparation model operates on a predict-then-train cycle: industry declares which skills are needed, education aligns curricula accordingly, and graduates enter the workforce equipped with the specified competencies. AI disrupts this cycle by automating the very competencies that education has been retooled to provide, often before the retooled graduates enter the labor market.
+
+The ``learn to code'' movement provides the most empirically vivid illustration. Between 2022 and 2026, entry-level developer job postings fell 67\%. Computer programmer roles declined approximately 27\% in two years. Employment for developers aged 22--25 dropped nearly 20\% from late 2022 to mid-2025. Computer science graduates faced 6.1\% unemployment---nearly double the national average. The coding bootcamp industry, which had been education's most aggressive response to the ``skills gap,'' collapsed: General Assembly, App Academy, Hack Reactor, and numerous others shut down or restructured. AI-authored code jumped from 22\% of all new code in Q3 2025 to 27\% by February 2026. The workforce preparation model had aligned education to precisely the domain that AI was automating fastest.
+
+The deeper issue is not that the model chose the wrong skill. It is that any predict-then-train model faces a moving-goalpost problem: by the time education systems complete the alignment cycle (typically 3--7 years for curriculum reform, teacher training, and student throughput), AI capabilities have advanced to automate the targeted competencies. \citet{Auerbach2025capital} critiques human capital theory for imposing ``a single linear pathway on the complex passage between heterogeneous education and work,'' arguing that pay has grown unequal in ways the theory cannot explain and that educational decisions are socially determined rather than the outcome of rational cost-benefit calculation.
+
+% ============================================================
+% SECTION 3: ASSESSMENT
+% ============================================================
+\section{The Assessment Apparatus: Measuring Compliance, Not Capability}
+\label{sec:assessment}
+
+If the purpose of education is contested, the instruments by which it measures success are in deeper crisis still. The current assessment regime---grade point averages, standardized tests, and academic credentials---was designed for a world in which these proxies reliably signaled the qualities they purported to measure. The evidence increasingly suggests they do not.
+
+\subsection{GPA and Innovation: The Inverse Correlation}
+\label{sec:gpa}
+
+\citet{Mayhew2012innovation}, surveying over 10,000 university students across the United States, Canada, Germany, and Qatar, found that \emph{the higher the GPA, the lower the student's orientation toward creative or innovative work}. The researchers explained: ``Perhaps students with propensities toward innovation are less concerned with grading systems that rely on memorization by way of assessment.'' Innovators tend to be intrinsically motivated; grades are extrinsic motivators that may actively suppress innovative thinking.
+
+This finding aligns with longitudinal data. A 2024 University of Iowa study found that since the 1920s, academic performance has \emph{progressively weakened} as a predictor of job performance, owing to grade inflation and the divergence between academic and workplace behaviors. Google's own internal analysis concluded that ``college transcripts and test scores are worthless predictors of later job performance.'' McKinsey found that hiring for skills is five times more predictive of job performance than hiring based on education. The National Association of Colleges and Employers reports that GPA as a hiring screen has declined 35 percentage points since 2019.
+
+\subsection{Twice-Exceptional Students and Standardized Testing}
+\label{sec:2e}
+
+Twice-exceptional (2e) students---those who are intellectually gifted but also have one or more learning disabilities such as dyslexia, ADHD, or autism spectrum conditions---represent the population most systematically failed by assessment systems. Their gifts can mask their disabilities (through compensation), or their disabilities can mask their giftedness, resulting in an ``average'' presentation that triggers neither gifted identification nor learning support. These students are frequently told they are ``lazy'' or ``not trying''---messages they internalize as evidence of inadequacy.
+
+The historical record is rich with cases that, viewed retrospectively, demonstrate the system's structural inability to recognize non-linear cognitive profiles. Srinivasa Ramanujan failed all non-mathematics subjects, lost multiple scholarships, and could not complete any degree---yet independently produced approximately 3,900 mathematical results whose implications are still being discovered a century later. Albert Einstein dropped out of the Luitpold Gymnasium at 15, failed his first polytechnic entrance examination, and was rejected by every university he applied to after graduation. Thomas Edison received three months of formal schooling before his teacher declared him ``addled.'' Leonardo da Vinci, who had no formal education and is now believed to have had dyslexia and ADHD, became perhaps the greatest polymath in recorded history.
+
+These are not stories of individuals who succeeded \emph{despite} the education system; they are stories of individuals who succeeded \emph{after escaping} it. The system's assessment apparatus was structurally incapable of recognizing what they had to offer.
+
+\subsection{Credentialism's Hollow Promise}
+\label{sec:credentialism}
+
+More than half of U.S. college graduates begin their careers in jobs that do not require a college degree. An NBER study found that 16 million out of 71 million working high school graduates possessed the skills for high-wage work, but 66\% were confined to low- or middle-wage employment by credential requirements. The Thiel Fellowship---which paid 271 individuals under 22 to drop out of college and pursue ventures---generated over \$100 billion in business value and produced 11 or more unicorn companies, a result that was initially mocked by institutional gatekeepers (Harvard's president called it ``the single most misdirected bit of philanthropy in this decade'').
+
+Yet even as 85\% of employers claim to practice skills-based hiring, \citet{HBS2024skills} found that the actual impact amounts to 0.14\% of hires---fewer than 1 in 700. Credentialism persists not because credentials predict performance, but because they serve as low-cost screening devices in high-volume hiring processes. They measure compliance with institutional norms, not capability.
+
+% ============================================================
+% SECTION 4: THE INVARIANT FUNCTIONS
+% ============================================================
+\section{The Invariant Functions: What AI Cannot Replace}
+\label{sec:invariant}
+
+Sections~\ref{sec:case-for-change} and \ref{sec:assessment} established what is broken in the current educational paradigm. It would be tempting to conclude, as the obsolescence thesis does, that education itself is the problem. This section presents the countervailing evidence: that education serves functions which are invariant across technological regimes, and that AI's intervention makes these functions \emph{more critical}, not less.
+
+\subsection{Socialization: Durkheim in the Digital Age}
+\label{sec:socialization}
+
+\citet{Durkheim1956education} defined education as ``a methodical socialization of the young generation''---the process by which self-centered beings are transformed into moral citizens capable of social participation. This definition is frequently dismissed as archaic, but the evidence for its continued relevance is substantial and growing.
+
+A persistent cognitive bias documented by \citet{Protzko2019kids}---the ``Kids These Days'' effect---means that every generation perceives the next as deficient. The same complaints appear in Plato, Aristotle, and every century since. Objective measures show present-day children scoring higher on intelligence and delayed gratification than previous generations. However, post-smartphone and post-pandemic data reveal genuinely novel patterns. GWI's 2024 survey found that 80\% of Gen Z respondents reported experiencing loneliness in the preceding 12 months, compared to 45\% of baby boomers. A 2025 Common Sense Media survey found that one-third of teenagers already prefer AI companions to humans for serious conversations. CNN reported in 2026 that Gen Z is ``outsourcing hard conversations to AI,'' which experts warn erodes the very social skills---reading cues, managing conflict, negotiating compromise---that the conversations were meant to develop.
+
+The \citet{Fordham2023individualism} critique of progressive education identifies a structural mechanism. Child-centered pedagogy, in its emphasis on individual expression and autonomy, can eliminate ``the requirement for children to make small sacrifices of their own immediate interest for the good of the group.'' Yet it is precisely this sacrifice---attending to a peer's contribution, negotiating a disagreement, subordinating one's preference to a collective decision---that constitutes the behavioral foundation of the social contract. \citet{Shah2019childcentered} enumerates eleven criticisms of child-centered education, including the production of a ``sense of entitlement generally not viewed positively by employers, partners, family, friends, or colleagues.''
+
+An important counterpoint emerges from Korean longitudinal data: the Korea Institute for Youth Policy Research (2023, $N = 5{,}271$) found that MZ-generation members scored \emph{higher} on general sociality than Generation X. The pattern of low sociality applied to a specific subgroup (51\% of out-of-school youth), not the generation as a whole. The researchers emphasized the need to attend to \emph{within}-generation heterogeneity rather than constructing inter-generational conflict narratives.
+
+Taken together, the evidence suggests that school's socialization function---the space where humans learn to compromise, cooperate, and subordinate immediate self-interest to collective norms---remains indispensable, but that this function is being eroded both by pedagogical philosophies that do not require social sacrifice and by AI systems that enable the avoidance of interpersonal friction.
+
+\subsection{Cognitive Development: The Necessity of Productive Friction}
+\label{sec:cognitive}
+
+\citet{Bjork1994desirable} introduced the concept of \emph{desirable difficulties}: learning conditions that slow initial acquisition but produce stronger long-term retention and transfer. Spacing practice over time (rather than massing it), interleaving different problem types (rather than blocking them), and testing as a learning event (rather than merely an assessment) all generate short-term difficulty that translates to durable learning. The mechanism is well established: effortful retrieval strengthens memory traces; fluent passive review does not.
+
+AI systematically eliminates desirable difficulties. A 2025 study published in PMC found a strong positive correlation between higher cognitive load and better critical thinking, concluding that the lower cognitive load reported by frequent AI users was not beneficial but a signal that ``essential intrinsic processing had been bypassed'' \citep{CognitiveParadox2025}. The Bellwether report on productive struggle identified four learning components at risk when AI replaces cognitive effort: memory and processing, attention and engagement, motivation and mindset, and metacognition and self-regulation \citep{Bellwether2025struggle}. When students rely on AI, they develop ``unrealistic expectations about learning ease, lack opportunities to develop resilience and grit, and become less willing to engage in productive struggles.''
+
+\subsection{The Delegation Feedback Loop: AI-Induced Cognitive Decline}
+\label{sec:delegation}
+
+The evidence for AI-induced cognitive decline extends well beyond theoretical concerns. \citet{Gerlich2025offloading}, studying 666 participants, found a significant negative correlation ($r = -0.68$) between frequent AI tool usage and critical thinking abilities, mediated by increased cognitive offloading. Participants aged 17--25 showed the highest dependence and lowest critical thinking scores.
+
+\citet{Bastani2024chatgpt} conducted a randomized experiment with approximately 1,000 Turkish high school students. The ChatGPT group solved 48\% more practice problems correctly but scored \emph{17\% worse} on the subsequent independent test. Students with an ``AI tutor'' solved 127\% more practice problems but showed \emph{no improvement} on the test. The mechanism was straightforward: students asked ChatGPT for answers rather than building understanding. A 2026 report from the University of Technology Sydney distinguished between beneficial offloading (AI handles tedious tasks, freeing working memory for hard thinking) and detrimental offloading (AI bypasses hard thinking itself, collapsing the entire schema-construction process). ``Students using AI score higher but learn less.''
+
+Historical precedent reinforces the concern. \citet{Dahmani2020gps} demonstrated that people with greater lifetime GPS experience have worse spatial memory during self-guided navigation, and crucially, that this relationship is causal rather than selectional: GPS use \emph{causes} spatial memory decline, rather than people with poor spatial memory merely using GPS more. In medicine, endoscopists who regularly used AI for polyp detection showed reduced adenoma detection rates (28\% to 22\%) when the AI was removed. \citet{Bainbridge1983ironies}, in a 1983 paper that has attracted over 1,800 citations and is increasingly relevant, articulated the foundational paradox: by automating most operations, we ensure that human operators no longer practice skills as part of ongoing work; an experienced operator monitoring an automated process may be effectively inexperienced.
+
+A March 2026 arXiv paper synthesizes these dynamics into a self-reinforcing model \citep{CognitiveDivergence2026}. AI context windows grew from 512 tokens in 2017 to 2,000,000 tokens in 2026---a factor of approximately 3,906. Human effective context span, by contrast, declined from an estimated 16,000 tokens in 2004 to approximately 1,800 tokens in 2026. The \emph{delegation feedback loop} operates as follows: as AI capability grows, the cognitive threshold at which humans delegate falls, extending to tasks of negligible demand; the resulting reduction in cognitive practice further attenuates already-declining capacities, which drives further delegation. \citet{Anthropic2026interviews}, surveying 81,000 Claude users across 159 countries, found that users express ``a palpable fear that reliance on AI for writing, thinking, and organizing will diminish their own cognitive sharpness'' and concerns about ``forgetting how to think'' without algorithmic assistance.
+
+\subsection{The Matthew Effect: AI as Inequality Amplifier}
+\label{sec:matthew}
+
+Perhaps the most consequential empirical finding is that AI's cognitive effects are not uniformly distributed. Students with strong metacognitive skills and domain knowledge can leverage AI for beneficial offloading---delegating mechanical tasks to focus on higher-order reasoning. Students without these capacities are susceptible to detrimental offloading, bypassing the very learning processes they need most. The result is a Matthew Effect in which AI accelerates learning for the already-capable and deepens deficits for the disadvantaged \citep{AIbridgingwidening2025, GenAIequalizer2026}.
+
+This finding has direct implications for the debate over educational structure. The research base on Direct Instruction---spanning four decades and anchored by Project Follow Through, the largest educational experiment ever conducted---consistently finds that structured, teacher-directed instruction produces the highest achievement gains for disadvantaged students. The implication is counterintuitive to advocates of unfettered learner autonomy: for students building foundational capacities, \emph{more} structure, not less, is the optimal intervention. Unstructured self-directed learning with AI tools risks widening the very inequalities that educational reform purports to address.
+
+% ============================================================
+% SECTION 5: THE WHETSTONE THESIS
+% ============================================================
+\section{The Whetstone Thesis: A Taxonomy of Educational Friction}
+\label{sec:whetstone}
+
+The preceding sections establish a paradox. Education as currently constituted is inadequately preparing students for an AI-transformed world (Section~\ref{sec:case-for-change}). Its assessment systems measure compliance rather than capability (Section~\ref{sec:assessment}). Yet the functions it serves---socialization, cognitive development through effortful learning, the formation of judgment---are not merely still relevant but \emph{more critical} in an environment where AI can remove all friction indiscriminately (Section~\ref{sec:invariant}).
+
+The resolution lies in recognizing that not all educational friction is equivalent. Some friction is a relic of administrative convenience and should be eliminated. Other friction is the mechanism by which human capability is built and must be preserved. The discipline that holds the knowledge to make this distinction is education science.
+
+\subsection{Friction to Eliminate}
+\label{sec:eliminate}
+
+The following categories of friction serve no developmental function and impose costs that AI can and should reduce:
+
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Bureaucratic friction.} Administrative overhead, opaque application processes, and institutional gatekeeping that restrict access to learning based on geography, socioeconomic status, or procedural compliance rather than readiness or ability.
+    \item \textbf{Arbitrary content friction.} Rote memorization of facts that are instantly retrievable, formulaic exercises that reward pattern-matching over understanding, and age-based grade lockstep that ignores individual developmental trajectories.
+    \item \textbf{Assessment friction.} Standardized tests that measure a narrow band of cognitive compliance (Section~\ref{sec:assessment}) and credentialing requirements that function as screening devices unrelated to actual capability (Section~\ref{sec:credentialism}).
+    \item \textbf{Economic friction.} Cost barriers that make quality education a function of family wealth, and geographic constraints that limit access to expertise.
+\end{itemize}
+
+AI is already reducing these frictions. Personalized tutoring systems can adapt to individual learning trajectories. Administrative AI can streamline application and enrollment processes. Translation models can break language barriers. These are unambiguous gains. The error is in assuming that \emph{all} friction falls into this category.
+
+\subsection{Friction to Preserve}
+\label{sec:preserve}
+
+The following categories of friction are not obstacles to learning but \emph{mechanisms} of learning and human development:
+
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Cognitive friction.} The struggle to understand---not merely to produce an answer---is the process by which durable knowledge structures are built \citep{Bjork1994desirable, Bjork2011desirable}. When AI provides instant solutions, it removes the retrieval effort that strengthens memory, the generation effort that deepens comprehension, and the error-correction effort that builds metacognitive awareness. The Penn/Wharton result \citep{Bastani2024chatgpt}---48\% more problems solved, 17\% worse on independent tests---is the empirical signature of cognitive friction's removal.
+    \item \textbf{Social friction.} Negotiating with peers, compromising on group decisions, handling interpersonal conflict, listening to perspectives one disagrees with---these experiences are not merely ``soft skills'' but the behavioral substrate of the social contract \citep{Durkheim1956education, Fordham2023individualism}. AI companions that enable the avoidance of interpersonal difficulty do not merely deprive students of practice; they atrophy the capacity for social participation itself.
+    \item \textbf{Failure friction.} Experiencing setback, coping with frustration, iterating after error---these are the mechanisms through which resilience and self-efficacy develop \citep{Bellwether2025struggle}. An environment in which AI prevents all failure is an environment in which the capacity to recover from failure cannot form. The distinction is between failure as \emph{punishment} (which the system currently implements via grading) and failure as \emph{information} (which is developmentally productive).
+    \item \textbf{Ambiguity friction.} Making judgments in situations where no clear right answer exists---ethical dilemmas, novel problems, value trade-offs---is the domain in which human judgment is most irreplaceable and most necessary. AI systems optimized for single correct outputs are structurally unable to model this domain; education systems that eliminate it produce graduates unable to navigate it.
+    \item \textbf{Attention friction.} Sustained engagement with complex material---reading a long argument, following a proof, sitting with a difficult text---builds cognitive endurance that rapid-fire AI interaction does not \citep{CognitiveDivergence2026}. The 89\% estimated decline in human effective context span (2004--2026) suggests that attention friction is being eliminated at precisely the moment it is most needed.
+\end{itemize}
+
+\subsection{The Design Principle: Structured Autonomy}
+\label{sec:structured-autonomy}
+
+The resolution is not ``freedom versus structure'' but \emph{structured autonomy}: calibrated scaffolding that varies by learner readiness.
+
+For students with strong metacognitive skills and domain foundations, self-directed learning with AI tools can be genuinely accelerative. The beneficial offloading channel is open: AI handles mechanical tasks while the student directs higher-order reasoning. For students building foundational capacities, direct instruction with carefully designed AI integration---where the AI poses better questions rather than providing answers, where retrieval practice is required before AI consultation is permitted---preserves the productive friction that builds capability.
+
+The key insight is that \emph{uniform freedom is as harmful as uniform constraint}. An education system that gives every student unrestricted AI access, regardless of readiness, will widen the Matthew Effect. An education system that restricts all AI access, regardless of capability, will fail to leverage its genuine benefits. The calibration requires precisely the knowledge that education science provides: understanding of developmental stages, learning mechanisms, individual differences, and the conditions under which difficulty is desirable versus destructive.
+
+Assessment in this framework shifts from testing knowledge retention to evaluating two dimensions: \emph{what was created} (portfolio, project, artifact) and \emph{how collaboration occurred} (the social process, including AI collaboration, by which the creation emerged). This dual assessment preserves both the creative output valued in the one-person enterprise economy and the social negotiation required for human coexistence.
+
+\subsection{The Ontological Reframing}
+\label{sec:ontological}
+
+Education science is not about the tools. It was never about the tools. When the chalkboard replaced oral recitation, the fundamental questions of education---how humans learn, how they develop, how they become social---did not change. When the textbook replaced the chalkboard, when the internet replaced the textbook, the questions persisted. AI is the most powerful tool yet introduced into the educational environment, but it is still a tool.
+
+The questions that education science addresses are orthogonal to the instrument:
+
+\begin{itemize}[leftmargin=*]
+    \item How does cognitive effort translate into durable learning? (\citealt{Bjork1994desirable})
+    \item What conditions enable the transition from self-centered child to cooperative citizen? (\citealt{Durkheim1956education})
+    \item What is the purpose of education---human development or economic production? (\citealt{Nussbaum2010profit}; \citealt{Zhao2025meritocracy})
+    \item How should educational friction be calibrated to individual readiness? (Section~\ref{sec:matthew})
+\end{itemize}
+
+As the tools become more powerful, these questions become more---not less---critical. GPS did not make geography obsolete; it made the understanding of spatial systems more important, because the consequences of spatial ignorance (inability to navigate without the device) became more severe \citep{Dahmani2020gps}. Calculators did not make mathematics obsolete; they shifted the emphasis from arithmetic to mathematical reasoning. AI does not make education science obsolete; it shifts the emphasis from content delivery to \emph{the design of productive learning experiences}---a task that requires deeper understanding of human cognition, development, and social formation than content delivery ever did.
+
+\citet{Zhao2024grammar} captures the point precisely: ``AI embedded in traditional schooling becomes constrained by it---used only to do old things more efficiently. The real potential of AI lies in supporting personalization, helping students find, frame, and pursue meaningful problems.'' But knowing \emph{how} to design such personalization---when to scaffold, when to release, when to impose difficulty, when to remove it---is the work of education science. The more powerful the blade, the more precisely you need to know how to sharpen it.
+
+% ============================================================
+% SECTION 6: DISCUSSION
+% ============================================================
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{Implications for Curriculum Design}
+\label{sec:curriculum}
+
+The whetstone thesis implies a dual-track curriculum design: AI-accelerated skills acquisition operating alongside friction-preserved human development. The former leverages AI's genuine strengths---personalized pacing, instant feedback, access to expertise previously gated by geography and cost. The latter deliberately preserves cognitive struggle (through retrieval practice requirements before AI consultation), social negotiation (through collaborative projects with genuine interdependence), and failure recovery (through iterative assessment models where initial failure is expected and revision is the learning event).
+
+Critically, socialization cannot be treated as an optional add-on to personalized learning. If each student follows an individualized AI-optimized trajectory in isolation, the socialization function---learning to attend to others, to compromise, to participate in collective decision-making---is lost. Personalization and socialization must be designed as complementary, not competing, objectives.
+
+\subsection{Implications for AI Tool Design in Education}
+\label{sec:tool-design}
+
+The OECD's 2026 recommendation that education should use purpose-built AI systems rather than off-the-shelf chatbots reflects the whetstone thesis directly. A general-purpose chatbot, asked a question, provides an answer---eliminating the cognitive friction that constitutes learning. A pedagogically designed AI system, asked a question, might respond with a better question, require the student to articulate what they already know, or present a related problem that forces transfer. The difference is not in the AI's capability but in its \emph{design intent}, which must be informed by learning science.
+
+The UTS beneficial/detrimental offloading framework provides a practical guide: AI should handle tasks where the cognitive effort is mechanical and unproductive (formatting, fact-retrieval, translation) while preserving tasks where the cognitive effort is the learning itself (reasoning, synthesis, evaluation, creation). The boundary between these categories is not self-evident; it requires the expertise that education science provides.
+
+\subsection{Limitations}
+\label{sec:limitations}
+
+This paper is a critical synthesis, not an original empirical study. Its arguments rest on the integration of findings from diverse research traditions---cognitive science, educational theory, labor economics, organizational theory---each with its own methodological standards and limitations. The research base is weighted toward Western institutional contexts, with Korean data serving as supplementary rather than primary evidence. The rapidly evolving nature of AI capabilities means that specific empirical findings (e.g., the proportion of AI-authored code, the cost structure of one-person enterprises) may be dated by the time of publication.
+
+The historical cases of ``geniuses who failed school'' (Section~\ref{sec:2e}) are subject to survivorship bias: for every Ramanujan who was eventually recognized, there may be many who were not. These cases demonstrate that the assessment system \emph{can} fail to recognize capability; they do not demonstrate that all assessment failure reflects unrecognized capability.
+
+Finally, the whetstone thesis's call for ``structured autonomy'' is easier to articulate than to implement. Calibrating scaffolding to individual readiness requires assessment capabilities that current systems may not possess, teacher expertise that is in short supply, and institutional flexibility that bureaucratic systems resist. The thesis identifies a direction; it does not solve the implementation problem.
+
+\subsection{Future Research Directions}
+\label{sec:future}
+
+Four research priorities emerge from this synthesis:
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Empirical measurement of the productive friction threshold.} At what point does cognitive effort transition from desirable difficulty to unproductive frustration? How does this threshold vary across demographics, developmental stages, and subject domains? Longitudinal studies comparing AI-mediated and friction-preserved learning conditions would provide the evidence base for calibrated design.
+    \item \textbf{The delegation feedback loop in educational settings.} The \citet{CognitiveDivergence2026} model predicts a self-reinforcing cycle of cognitive decline. Controlled studies that vary AI access intensity over time and measure cognitive outcomes longitudinally would test whether the delegation feedback loop operates as theorized.
+    \item \textbf{Cross-cultural socialization under AI integration.} The Korean data showing higher general sociality among MZ-generation members contrasts with Western findings of Gen Z isolation. Systematic cross-cultural comparison of socialization outcomes under different AI integration models would illuminate which cultural and institutional factors moderate AI's effects on social development.
+    \item \textbf{Structured autonomy design experiments.} Controlled comparisons of curriculum designs that implement the friction taxonomy---eliminating bureaucratic and arbitrary friction while preserving cognitive and social friction---would test whether the whetstone thesis translates into measurable learning and developmental outcomes.
+\end{enumerate}
+
+% ============================================================
+% SECTION 7: CONCLUSION
+% ============================================================
+\section{Conclusion}
+\label{sec:conclusion}
+
+The AI era presents education with four simultaneous challenges: enabling freedom without producing narcissistic individualism; maintaining structure without perpetuating the factory model; leveraging AI without inducing cognitive atrophy; and ensuring relevance without reducing education to corporate servitude. These challenges cannot be resolved by choosing one side of any binary---freedom versus structure, AI versus tradition, workforce versus liberal arts. They require the precise knowledge of which friction builds human capability and which friction merely obstructs it.
+
+This paper has argued that education science is the discipline that holds this knowledge. Its core questions---how humans learn, how they develop, how they become social beings capable of cooperation and judgment---are not artifacts of a pre-AI world. They are invariant properties of human cognition and social existence, and they become \emph{more} critical as AI's power to remove friction grows.
+
+The whetstone sharpens through controlled friction. Remove all friction and the blade dulls. Apply friction without understanding and the blade chips. The craft---the \emph{science}---lies in knowing which friction, at what angle, with what pressure, for which blade. AI is the most powerful cutting instrument education has ever been given. Education science is the whetstone.
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}
