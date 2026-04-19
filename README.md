@@ -13,18 +13,16 @@ AI transforms *what* and *how* education delivers, but not *why* education is ne
 3. **Invariant Functions** — Socialization (Durkheim), productive friction (Bjork), delegation feedback loop, Matthew Effect
 4. **The Whetstone Thesis** — Taxonomy of educational friction, structured autonomy, ontological reframing
 
-## Target Venues
+## Repository Structure
 
-- Postdigital Science and Education (Springer)
-- ECNU Review of Education (SAGE)
-- AI & Society (Springer)
-- British Journal of Educational Technology (Wiley)
-- Computers & Education (Elsevier)
-
-## Status
-
-- [x] Outline
-- [x] First draft (position paper / critical synthesis)
-- [ ] Internal review
-- [ ] Venue selection & formatting
-- [ ] Submission
+```
+whetstone/
+  paper/                      Domain -- manuscript source of truth
+    main.tex
+    references.bib
+    figures/
+  experiments/                Application (skeleton)
+  literature/                 Reading notes, gap analysis
+  planning/                   review, decisions log
+    drafts/                   outline.md (superseded)
+```
