@@ -1,8 +1,8 @@
 # Whetstone
 
-*Research Program: 6 (Analogy / theory layer)*
-*Status: Concept note*
-*Relationship to other work: Companion to [pythia](../pythia) and [analogic-appropriation](../analogic-appropriation) — Program 6 papers that work through metaphor as theoretical scaffolding.*
+Research Program: 6 (Analogy / theory layer)
+Status: Concept note
+Relationship to other work: Companion to [pythia](https://github.com/heznpc/pythia) and [analogic-appropriation](https://github.com/heznpc/analogic-appropriation) — Program 6 papers that work through metaphor as theoretical scaffolding.
 
 This is a concept note, not a finished paper.
 
@@ -37,7 +37,7 @@ planning/              review.md, decisions.md, drafts/
 
 ## Currently implemented
 
-- Full 285-line LaTeX manuscript (`paper/main.tex`) with 446-line references.bib integrating OECD/UNESCO/WEF reports, Coase 1937, Durkheim, Bjork's desirable difficulties, and 2026 empirical anchors (86% undetected student AI use, 67% entry-level developer job decline, solo-founder growth from 23.7% → 36.3%).
+- Full 285-line LaTeX manuscript (`paper/main.tex`) with 446-line references.bib integrating OECD/UNESCO/WEF reports, Coase 1937, Durkheim, Bjork's desirable difficulties, and 2026 empirical anchors (86% of student AI use undetected by instructors, 67% decline in entry-level developer job postings 2022–2026, solo-founder share of new startups rising from 23.7% to 36.3%).
 - Internal review notes (`planning/review.md`) with self-assessment and venue-fit analysis.
 
 ## Planned
